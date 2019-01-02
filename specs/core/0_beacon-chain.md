@@ -470,7 +470,6 @@ Unless otherwise indicated, code appearing in `this style` is to be interpreted 
 
     # Validator registry
     'validator_registry': [ValidatorRecord],
-    'validator_balances': ['uint64'],
     'validator_registry_latest_change_slot': 'uint64',
     'validator_registry_exit_count': 'uint64',
     'validator_registry_delta_chain_tip': 'hash32',  # For light clients to track deltas
@@ -510,6 +509,8 @@ Unless otherwise indicated, code appearing in `this style` is to be interpreted 
     'pubkey': 'uint384',
     # Withdrawal credentials
     'withdrawal_credentials': 'hash32',
+    # Balance of the validator
+    'balance': 'uint64',
     # RANDAO commitment
     'randao_commitment': 'hash32',
     # Slots the proposer has skipped (i.e. layers of RANDAO expected)
